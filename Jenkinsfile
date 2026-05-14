@@ -39,7 +39,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 echo 'Deploying application to Kubernetes...'
-                bat 'kubectl apply -f k8s/ --validate=false'
+                bat 'kubectl --kubeconfig="C:\\Users\\Asus\\.kube\\config" apply -f k8s/'
             }
         }
     }
