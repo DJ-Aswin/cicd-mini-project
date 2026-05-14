@@ -36,5 +36,11 @@ pipeline {
                 bat 'docker run -d -p 3000:3000 --name cicd-app cicd-mini-project'
             }
         }
+        stage('Deploy to Kubernetes') {
+            steps {
+                echo 'Deploying application to Kubernetes...'
+                bat 'kubectl apply -f k8s/'
+            }
+        }
     }
 }
