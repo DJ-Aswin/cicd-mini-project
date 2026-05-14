@@ -1,0 +1,13 @@
+{
+  "name": "cicd-mini-project",
+  "version": "1.0.0",
+  "description": "End-to-End CI/CD Pipeline using Jenkins, Docker, and Kubernetes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No test cases added yet\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
